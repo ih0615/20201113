@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#wrap {
+	margin: 0 auto;
+	width: 430px;
+	overflow: hidden;
+}
+
+#left {
+	width: 110px;
+	float: left;
+}
+
+#right {
+	width: 300px;
+	float: right;
+}
+
+#left>label {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+#right>input {
+	height: 20px;
+}
+
+#right>select {
+	height: 20px;
+}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<form action="join" method="post">
+			<div id="left">
+				<label for="name">이름</label><br> <label for="gender">성별</label><br>
+				<label for="id">아이디</label><br> <label for="pw">비밀번호</label><br>
+				<label for="pwr">비밀번호 확인</label><br> <label for="adr">주소</label><br>
+				<label for="tel">전화번호</label><br> <label for="email">이메일
+					주소</label><br> <label for="">취미</label>
+					<input type="submit" value="회원가입">
+			</div>
+			<div id="right">
+				<input type="text" name="name" id="name"><br> <select
+					name="gender" id="gender">
+					<option value="남성">남성</option>
+					<option value="여성">여성</option>
+				</select><br> <input type="text" name="id" id="id"><br> <input
+					type="password" name="pw" id="pw"><br> <input
+					type="password" name="pwr" id="pwr"><br> <input
+					type="text" name="adr" id="adr"><br> <input type="tel"
+					name="tel" id="tel"><br> <input type="email"
+					name="email" id="email"><br> <label>축구<input
+					type="checkbox" name="hobby" value="축구"></label> <label>야구<input
+					type="checkbox" name="hobby" value="야구"></label> <label>농구<input
+					type="checkbox" name="hobby" value="농구"></label><br> <label>수영<input
+					type="checkbox" name="hobby" value="수구"></label> <label>게임<input
+					type="checkbox" name="hobby" value="게임"></label> <label>독서<input
+					type="checkbox" name="hobby" value="독서"></label><br> <label>음악<input
+					type="checkbox" name="hobby" value="음악"></label> <label>TV<input
+					type="checkbox" name="hobby" value="TV"></label> <label>영화<input
+					type="checkbox" name="hobby" value="영화"></label><br> <label>연극<input
+					type="checkbox" name="hobby" value="연극"></label> <label>뮤지컬<input
+					type="checkbox" name="hobby" value="뮤지컬"></label> <label>전시<input
+					type="checkbox" name="hobby" value="전시"></label>
+			</div>
+			
+		</form>
+	</div>
+</body>
+</html>

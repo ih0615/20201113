@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.wrap {
+	width: 300px;
+	margin: 0 auto;
+}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<form action="JoinServlet" method="POST">
+			<table>
+				<tr>
+					<td>이름</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td>성별</td>
+					<td><select name="gender">
+							<option value="남성">남성</option>
+							<option value="여성">여성</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>아이디</td>
+					<td><input type="text" name="ID"></td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td><input type="password" name="PW"></td>
+				</tr>
+				<tr>
+					<td>비밀번호 확인</td>
+					<td><input type="password" name="PWR"></td>
+				</tr>
+				<tr>
+					<td>주소</td>
+					<td><input type="text" name="address"></td>
+				</tr>
+				<tr>
+					<td>전화번호</td>
+					<td><input type="tel" name="tel"></td>
+				</tr>
+				<tr>
+					<td>이메일 주소</td>
+					<td><input type="email" name="email"></td>
+				</tr>
+				<tr>
+					<td>취미</td>
+					<td>축구<input type="checkbox" name="hobby" value="축구">
+						야구<input type="checkbox" name="hobby" value="야구"> 농구<input
+						type="checkbox" name="hobby" value="농구"><br> 수영<input
+						type="checkbox" name="hobby" value="수영"> 게임<input
+						type="checkbox" name="hobby" value="게임"> 독서<input
+						type="checkbox" name="hobby" value="독서"><br> 음악<input
+						type="checkbox" name="hobby" value="음악"> TV<input
+						type="checkbox" name="hobby" value="TV"> 영화<input
+						type="checkbox" name="hobby" value="영화"><br> 연극<input
+						type="checkbox" name="hobby" value="연극"> 뮤지컬<input
+						type="checkbox" name="hobby" value="뮤지컬"> 전시<input
+						type="checkbox" name="hobby" value="전시">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="회원가입"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>
